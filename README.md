@@ -37,7 +37,7 @@ A complete parking management system built with PHP and MySQL, converted from th
 
 3. **Default Admin Accounts**
    - Email: `harish@admin.com` / Password: `first`
-   - Email: `janani@admin.com` / Password: `first`
+   - Email: `akil@admin.com` / Password: `first`
 
 ## File Structure
 
