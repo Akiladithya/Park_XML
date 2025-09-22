@@ -1,0 +1,24 @@
+RewriteEngine On
+
+# Redirect to index.php if no file specified
+DirectoryIndex index.php
+
+# Security headers
+Header always set X-Content-Type-Options nosniff
+Header always set X-Frame-Options DENY
+Header always set X-XSS-Protection "1; mode=block"
+
+# Hide sensitive files
+<Files "*.php~">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files ".htaccess">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Error pages
+ErrorDocument 404 /php_parking_project/login.php
+ErrorDocument 403 /php_parking_project/login.php

@@ -1,0 +1,16 @@
+{
+    "name": "parking/php-parking-system",
+    "description": "PHP Parking Management System",
+    "type": "project",
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Parking\\": "src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}
